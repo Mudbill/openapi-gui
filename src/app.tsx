@@ -1,10 +1,5 @@
-import ApiClient from "./client";
-import { useSpec } from "./hooks/api";
+import OpenApiClient from "./openapi-client";
 
 export default function App() {
-  const spec = useSpec();
-
-  if (!spec) return <>Ingen spec</>;
-
-  return <ApiClient specification={spec} />;
+  return <OpenApiClient url="http://localhost:3000/docs/openapi.json" />;
 }
