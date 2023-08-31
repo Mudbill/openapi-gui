@@ -1,0 +1,9 @@
+public/
+node_modules/
+
+src/vite-env.d.ts
+src/main.tsx
+src/app.tsx
+src/styles/globals.css
+
+index.html

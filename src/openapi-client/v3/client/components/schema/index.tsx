@@ -184,43 +184,43 @@ export default function Schema(props: Props) {
   );
 }
 
-function Constraints({
-  schema,
-  isComponent,
-}: {
-  schema: OpenAPIV3.SchemaObject;
-  isComponent: boolean;
-}) {
-  return (
-    <div className="flex gap-1 font-sans text-xs text-gray-500">
-      <div className="flex gap-1">
-        {isComponent && <span>REF</span>}
-        {schema.readOnly && <span>Read-only</span>}
-        {schema.description}
-        {schema.deprecated && <span>Deprecated</span>}
-        {/* {schema.type === "integer" && <span>integer</span>} */}
-        {/* {schema.enum?.length ? (
-          <span>
-            Allowed: <code>["{schema.enum.join('" | "')}"]</code>
-          </span>
-        ) : null} */}
-        {schema.maxLength !== undefined ? (
-          <span>Max {schema.maxLength} chars</span>
-        ) : null}
-        {schema.minLength !== undefined ? (
-          <span>Min {schema.minLength} chars</span>
-        ) : null}
-        {schema.minimum !== undefined ? (
-          <span>Min {schema.minimum}</span>
-        ) : null}
-        {schema.maximum !== undefined ? (
-          <span>Max {schema.maximum}</span>
-        ) : null}
-        {schema.writeOnly && <span>Write-only</span>}
-        {schema.default !== undefined ? (
-          <span>Default: {`${schema.default}`}</span>
-        ) : null}
-      </div>
-    </div>
-  );
-}
+// function Constraints({
+//   schema,
+//   isComponent,
+// }: {
+//   schema: OpenAPIV3.SchemaObject;
+//   isComponent: boolean;
+// }) {
+//   return (
+//     <div className="flex gap-1 font-sans text-xs text-gray-500">
+//       <div className="flex gap-1">
+//         {isComponent && <span>REF</span>}
+//         {schema.readOnly && <span>Read-only</span>}
+//         {schema.description}
+//         {schema.deprecated && <span>Deprecated</span>}
+//         {/* {schema.type === "integer" && <span>integer</span>} */}
+//         {/* {schema.enum?.length ? (
+//           <span>
+//             Allowed: <code>["{schema.enum.join('" | "')}"]</code>
+//           </span>
+//         ) : null} */}
+//         {schema.maxLength !== undefined ? (
+//           <span>Max {schema.maxLength} chars</span>
+//         ) : null}
+//         {schema.minLength !== undefined ? (
+//           <span>Min {schema.minLength} chars</span>
+//         ) : null}
+//         {schema.minimum !== undefined ? (
+//           <span>Min {schema.minimum}</span>
+//         ) : null}
+//         {schema.maximum !== undefined ? (
+//           <span>Max {schema.maximum}</span>
+//         ) : null}
+//         {schema.writeOnly && <span>Write-only</span>}
+//         {schema.default !== undefined ? (
+//           <span>Default: {`${schema.default}`}</span>
+//         ) : null}
+//       </div>
+//     </div>
+//   );
+// }
