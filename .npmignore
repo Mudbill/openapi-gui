@@ -1,5 +1,6 @@
 public/
 node_modules/
+docs/
 
 src/vite-env.d.ts
 src/main.tsx
@@ -7,3 +8,4 @@ src/app.tsx
 src/styles/globals.css
 
 index.html
+vite.config.ts
